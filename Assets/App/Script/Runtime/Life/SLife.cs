@@ -4,13 +4,11 @@ using UnityEngine;
 [Serializable]
 public struct SLife
 {
-    public float MaxLife { get; set; }
-    private float _currentLife;
-    public float CurrentLife
+    public int MaxLife { get; set; }
+    private int _currentLife;
+    public int CurrentLife
     {
         get => _currentLife;
-        set => _currentLife = Mathf.Max(value, 0f);
+        set => _currentLife = Mathf.Max(value, 0);
     }
-    
-    
 }

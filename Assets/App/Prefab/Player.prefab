@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 423eed25c106ef742aa47b876ded84aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 5
+  maxLife: 3
   rsoLife: {fileID: 11400000, guid: cfa6ece30ea0aef4783c13e74c8faf9d, type: 2}
   death:
     m_PersistentCalls:

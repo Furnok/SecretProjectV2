@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 7917495007985811772}
   - component: {fileID: 6068815117797379785}
   - component: {fileID: 9143034530938019383}
+  - component: {fileID: 7305914810307797386}
   m_Layer: 0
   m_Name: TrapCube
   m_TagString: Untagged
@@ -174,3 +175,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7305914810307797386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974209541424875309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f61144a0b5e31409f41dccec700c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagTarget: Player
+  damage: 1

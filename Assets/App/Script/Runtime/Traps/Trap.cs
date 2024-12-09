@@ -5,7 +5,7 @@ public class Trap : MonoBehaviour
 {
     [Title("Settings")]
     [SerializeField] private string tagTarget = "Player";
-    [SerializeField][MinValue(0)] private float damage;
+    [SerializeField][MinValue(0)] private int damage;
 
     private void OnTriggerEnter(Collider other)
     {

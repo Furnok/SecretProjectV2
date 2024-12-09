@@ -1,6 +1,6 @@
 public interface ILife 
 {
-    public void ReceiveDamage(float amount);
-    public void RecoverLife(float amount);
+    public void ReceiveDamage(int amount);
+    public void RecoverLife(int amount);
     
 }

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class LifeComponent : MonoBehaviour, ILife
 {
     [Title("Settings")]
-    [SerializeField] private float maxLife;
+    [SerializeField] private int maxLife;
     
     [Title("References")]
     [SerializeField] private RSO_Life rsoLife;
@@ -17,13 +17,13 @@ public class LifeComponent : MonoBehaviour, ILife
         rsoLife.Value = new SLife{CurrentLife = maxLife,MaxLife = maxLife};
     }
 
-    public void ReceiveDamage(float amount)
+    public void ReceiveDamage(int amount)
     {
         rsoLife.Value = new SLife{ CurrentLife = rsoLife.Value.CurrentLife - amount, MaxLife = maxLife};
         if (rsoLife.Value.CurrentLife <= 0) death.Invoke();
     }
 
-    public void RecoverLife(float amount)
+    public void RecoverLife(int amount)
     {
     }
 
