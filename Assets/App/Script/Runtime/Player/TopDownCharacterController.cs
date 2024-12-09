@@ -14,10 +14,17 @@ public class TopDownCharacterController : MonoBehaviour
 
     [Title("Output")]
     [SerializeField] private RSE_GameOver rsoGameOver;
+
+    private Vector3 posStart;
     
     public void Awake()
     {
         rsoPlayerTransform.Value = transform;
+    }
+
+    private void Start()
+    {
+        posStart = transform.position;
     }
 
     public void Move(Vector2 direction)
@@ -28,7 +35,6 @@ public class TopDownCharacterController : MonoBehaviour
 
     public void OnDeath()
     {
-        rsoGameOver.Call();
-        Destroy(gameObject);
+        gameObject.transform.position = posStart;
     }
 }
