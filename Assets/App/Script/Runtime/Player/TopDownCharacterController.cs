@@ -10,6 +10,7 @@ public class TopDownCharacterController : MonoBehaviour
 
     [Title("Reference")] 
     [SerializeField] private RSO_TargetTransform rsoPlayerTransform;
+    [SerializeField] private RSO_Life rsoLife;
     [SerializeField] private Rigidbody rb;
 
     [Title("Output")]
@@ -35,6 +36,7 @@ public class TopDownCharacterController : MonoBehaviour
 
     public void OnDeath()
     {
+        GetComponent<LifeComponent>().ResetLife();
         gameObject.transform.position = posStart;
     }
 }

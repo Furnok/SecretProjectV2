@@ -27,5 +27,10 @@ public class LifeComponent : MonoBehaviour, ILife
     {
     }
 
+    public void ResetLife()
+    {
+        rsoLife.Value = new SLife{ CurrentLife = maxLife, MaxLife = maxLife};
+    }
+
     private void OnDestroy() => Awake();
 }
